@@ -5,8 +5,8 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite --mode development",
-		"build": "vite build",
-		"preview": "vite preview",
+		"build": "vite build --mode production",
+		"preview": "vite preview --mode production",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -19,6 +19,7 @@
 		"@eslint/compat": "^1.2.5",
 		"@eslint/js": "^9.18.0",
 		"@sveltejs/adapter-auto": "^4.0.0",
+		"@sveltejs/adapter-node": "^5.2.12",
 		"@sveltejs/kit": "^2.16.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"daisyui": "^4.12.23",
@@ -39,6 +40,7 @@
 		"@tailwindcss/postcss": "^4.0.0-alpha.13",
 		"@tailwindcss/vite": "^4.0.3",
 		"autoprefixer": "^10.4.20",
+		"dotenv": "^16.4.7",
 		"postcss": "^8.5.1",
 		"tailwindcss": "^4.0.3"
 	}
